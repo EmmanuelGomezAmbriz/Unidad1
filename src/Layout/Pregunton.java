@@ -122,6 +122,5 @@ public class Pregunton extends Application {
         preguntas.add(new Pregunta("¿Cuántos planetas hay?",new String[]{"6","8","7"},2));
         preguntas.add(new Pregunta("¿Quién ganará el mundial?",new String[]{"Francia","Inglaterra","Bélgica"},0));
         preguntas.add(new Pregunta("¿Selecciona la respuesta correcta?",new String[]{"1","2","3"},2));
-        preguntas.add(new Pregunta("¿Donde quedo la cadenita?",new String[]{"En su corazón","1","2"},0));
     }
 }
