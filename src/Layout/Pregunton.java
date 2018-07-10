@@ -71,7 +71,7 @@ public class Pregunton extends Application {
 
         siguiente.setOnAction(event -> {
             if(indicePreguntaActual==preguntas.size()-1)
-            return;
+            indicePreguntaActual=-1;
             indicePreguntaActual++;
             pregunta.setText(preguntas.get(indicePreguntaActual).getPregunta());
             respuestas.getItems().clear();
@@ -81,7 +81,7 @@ public class Pregunton extends Application {
         });
         anterior.setOnAction(event -> {
             if(indicePreguntaActual==preguntas.size()-1)
-                return;
+            indicePreguntaActual=preguntas.size();
             indicePreguntaActual--;
             pregunta.setText(preguntas.get(indicePreguntaActual).getPregunta());
             respuestas.getItems().clear();
