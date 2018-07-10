@@ -70,7 +70,7 @@ public class Pregunton extends Application {
         });
 
         siguiente.setOnAction(event -> {
-            if(indicePreguntaActual==preguntas.size())
+            if(indicePreguntaActual==preguntas.size()-1)
             return;
             indicePreguntaActual++;
             pregunta.setText(preguntas.get(indicePreguntaActual).getPregunta());
@@ -80,7 +80,7 @@ public class Pregunton extends Application {
             }respuestaCorrecta.setText(preguntas.get(indicePreguntaActual).getRespuestas()[preguntas.get(indicePreguntaActual).getIndiceCorrecto()]);
         });
         anterior.setOnAction(event -> {
-            if(indicePreguntaActual==preguntas.size())
+            if(indicePreguntaActual==preguntas.size()-1)
                 return;
             indicePreguntaActual--;
             pregunta.setText(preguntas.get(indicePreguntaActual).getPregunta());
