@@ -1,5 +1,6 @@
 package Unidad_2;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -88,6 +89,10 @@ public class Calculadora extends Application {
             Display.setText(Display.getText()+".");
         }else {
         }
+    }
+    @FXML
+    void CodeonAction(ActionEvent event) {
+        Platform.exit();
     }
 
     @Override
