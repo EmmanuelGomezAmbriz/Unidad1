@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contenedor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="376.0" prefWidth="600.0" style="-fx-background-color: #e1f3f4;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Unidad_3_4.ProveedoresNuevo">
+   <children>
+      <JFXTextField fx:id="nombre" focusColor="#67cfff" labelFloat="true" layoutX="94.0" layoutY="38.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="38.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="rfc" focusColor="#67cfff" labelFloat="true" layoutX="94.0" layoutY="68.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="68.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="calle" focusColor="#67cfff" labelFloat="true" layoutX="94.0" layoutY="98.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="98.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="colonia" focusColor="#67cfff" labelFloat="true" layoutX="94.0" layoutY="128.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="128.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="ciudad" focusColor="#67cfff" labelFloat="true" layoutX="94.0" layoutY="158.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="158.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="pais" focusColor="#67cfff" labelFloat="true" layoutX="94.0" layoutY="188.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="188.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="telefono" focusColor="#67cfff" labelFloat="true" layoutX="94.0" layoutY="218.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="218.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="celular" focusColor="#67cfff" labelFloat="true" layoutX="94.0" layoutY="248.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="248.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="email" focusColor="#67cfff" labelFloat="true" layoutX="94.0" layoutY="278.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="278.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="423.0" layoutY="276.0" onAction="#guardar" prefHeight="28.0" prefWidth="141.0" style="-fx-background-color: #2fc648;" text="Guardar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="423.0" layoutY="320.0" onAction="#cancelar" prefHeight="28.0" prefWidth="141.0" style="-fx-background-color: GRAY;" text="Cancelar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="14.0" layoutY="43.0" text="Nombre:" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="43.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="73.0" text="RFC:" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="73.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="103.0" text="Calle:" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="103.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="133.0" text="Colonia:" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="133.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="163.0" text="Ciudad:" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="163.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="193.0" text="Pais:" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="193.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="223.0" text="Telefono:" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="223.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="253.0" text="Celular:" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="253.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="283.0" text="Email:" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="283.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="115.0" fitWidth="121.0" layoutX="436.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/icons8-añadir-usuario-masculino-96.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
