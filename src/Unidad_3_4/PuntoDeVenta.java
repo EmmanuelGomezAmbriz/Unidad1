@@ -18,8 +18,9 @@ public class PuntoDeVenta extends Application {
     private Pane contenedor;
 
     @FXML
-    void acercaDe(ActionEvent event) {
-
+    void acercaDe(ActionEvent event) throws IOException {
+        Parent layout = FXMLLoader.load(getClass().getResource("AcercaDe.fxml"));
+        contenedor.getChildren().add(layout);
     }
 
     @FXML

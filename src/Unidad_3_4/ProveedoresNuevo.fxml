@@ -8,50 +8,50 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="contenedor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="376.0" prefWidth="600.0" style="-fx-background-color: #e1f3f4;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Unidad_3_4.ProveedoresNuevo">
+<AnchorPane fx:id="contenedor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="376.0" prefWidth="600.0" style="-fx-background-color: #d2f4ed;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Unidad_3_4.ProveedoresNuevo">
    <children>
-      <JFXTextField fx:id="nombre" focusColor="#67cfff" labelFloat="true" layoutX="94.0" layoutY="38.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="38.0">
+      <JFXTextField fx:id="nombre" focusColor="#317c53" labelFloat="true" layoutX="94.0" layoutY="38.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="38.0">
          <font>
-            <Font name="Arial" size="14.0" />
+            <Font name="Comic Sans MS" size="14.0" />
          </font></JFXTextField>
-      <JFXTextField fx:id="rfc" focusColor="#67cfff" labelFloat="true" layoutX="94.0" layoutY="68.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="68.0">
+      <JFXTextField fx:id="rfc" focusColor="#317c53" labelFloat="true" layoutX="94.0" layoutY="68.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="68.0">
          <font>
-            <Font name="Arial" size="14.0" />
+            <Font name="Comic Sans MS" size="14.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="calle" focusColor="#67cfff" labelFloat="true" layoutX="94.0" layoutY="98.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="98.0">
+      <JFXTextField fx:id="calle" focusColor="#317c53" labelFloat="true" layoutX="94.0" layoutY="98.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="98.0">
          <font>
-            <Font name="Arial" size="14.0" />
+            <Font name="Comic Sans MS" size="14.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="colonia" focusColor="#67cfff" labelFloat="true" layoutX="94.0" layoutY="128.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="128.0">
+      <JFXTextField fx:id="colonia" focusColor="#317c53" labelFloat="true" layoutX="94.0" layoutY="128.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="128.0">
          <font>
-            <Font name="Arial" size="14.0" />
+            <Font name="Comic Sans MS" size="14.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="ciudad" focusColor="#67cfff" labelFloat="true" layoutX="94.0" layoutY="158.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="158.0">
+      <JFXTextField fx:id="ciudad" focusColor="#317c53" labelFloat="true" layoutX="94.0" layoutY="158.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="158.0">
          <font>
-            <Font name="Arial" size="14.0" />
+            <Font name="Comic Sans MS" size="14.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="pais" focusColor="#67cfff" labelFloat="true" layoutX="94.0" layoutY="188.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="188.0">
+      <JFXTextField fx:id="pais" focusColor="#317c53" labelFloat="true" layoutX="94.0" layoutY="188.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="188.0">
          <font>
-            <Font name="Arial" size="14.0" />
+            <Font name="Comic Sans MS" size="14.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="telefono" focusColor="#67cfff" labelFloat="true" layoutX="94.0" layoutY="218.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="218.0">
+      <JFXTextField fx:id="telefono" focusColor="#317c53" labelFloat="true" layoutX="94.0" layoutY="218.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="218.0">
          <font>
-            <Font name="Arial" size="14.0" />
+            <Font name="Comic Sans MS" size="14.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="celular" focusColor="#67cfff" labelFloat="true" layoutX="94.0" layoutY="248.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="248.0">
+      <JFXTextField fx:id="celular" focusColor="#317c53" labelFloat="true" layoutX="94.0" layoutY="248.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="248.0">
          <font>
-            <Font name="Arial" size="14.0" />
+            <Font name="Comic Sans MS" size="14.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="email" focusColor="#67cfff" labelFloat="true" layoutX="94.0" layoutY="278.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="278.0">
+      <JFXTextField fx:id="email" focusColor="#317c53" labelFloat="true" layoutX="94.0" layoutY="278.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="278.0">
          <font>
-            <Font name="Arial" size="14.0" />
+            <Font name="Comic Sans MS" size="14.0" />
          </font>
       </JFXTextField>
       <JFXButton layoutX="423.0" layoutY="276.0" onAction="#guardar" prefHeight="28.0" prefWidth="141.0" style="-fx-background-color: #2fc648;" text="Guardar">

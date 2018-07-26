@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contenedor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="376.0" prefWidth="600.0" style="-fx-background-color: #2b776e;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Unidad_3_4.AcercaDe">
+   <children>
+      <ImageView fitHeight="376.0" fitWidth="600.0" layoutY="-5.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@images/HD-Image-Background_Tools_Drawings_Patterns_392_2560x1600.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3a5882" height="328.0" layoutX="23.0" layoutY="21.0" opacity="0.44" stroke="#fffbfb" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="3.0" width="554.0" />
+      <ImageView fitHeight="98.0" fitWidth="103.0" layoutX="52.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/40814050.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="255.0" layoutY="31.0" text="Acerca de..." textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXTextArea editable="false" focusColor="#f7fcf8" layoutX="174.0" layoutY="77.0" prefHeight="217.0" prefWidth="371.0" style="-fx-text-fill: WHITE;" text="Developed by: &#10; - Gómez Ambriz Emmanuel Antonio. 15040093.&#10;Estudiante de ingeniería en sistemas&#10;computacionales.&#10;Instituto Tecnológico Superior de Uruapan.&#10;Proyecto desarrollado para la materia de 'Tópicos avanzados de programación'.&#10;Profesor: Roberto Loaeza Valerio.&#10;&#10;Uruapan, Mich.                     Verano 2018.">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </JFXTextArea>
+      <ImageView fitHeight="35.0" fitWidth="43.0" layoutX="197.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/if_Info_Circle_Symbol_Information_Letter_1396823.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="244.0" layoutY="309.0" onAction="#volver" prefHeight="32.0" prefWidth="113.0" style="-fx-background-color: RED;" text="Volver" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="98.0" fitWidth="103.0" layoutX="62.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/logo_simbolo2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

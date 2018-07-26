@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Unidad_3_4.PuntoDeVenta">
    <children>
-      <MenuBar layoutY="2.0" AnchorPane.bottomAnchor="376.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <MenuBar layoutY="2.0" style="-fx-background-color: #276860;" AnchorPane.bottomAnchor="376.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <menus>
           <Menu mnemonicParsing="false" text="Archivo">
             <items>
@@ -56,7 +58,17 @@
             </items>
           </Menu>
         </menus>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
       </MenuBar>
-      <Pane fx:id="contenedor" layoutY="24.0" prefHeight="376.0" prefWidth="600.0" style="-fx-background-color: #276860;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Pane fx:id="contenedor" layoutY="24.0" prefHeight="376.0" prefWidth="600.0" style="-fx-background-color: #2b776e;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fitHeight="97.0" fitWidth="95.0" layoutX="253.0" layoutY="141.0" opacity="0.38" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8-cuenta-64.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
    </children>
 </AnchorPane>
