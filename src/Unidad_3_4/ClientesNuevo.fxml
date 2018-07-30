@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="contenedor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="376.0" prefWidth="600.0" style="-fx-background-color: #d2f4ed;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Unidad_3_4.ProveedoresNuevo">
+<AnchorPane fx:id="contenedor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="376.0" prefWidth="600.0" style="-fx-background-color: #d2f4ed;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Unidad_3_4.ClientesNuevo">
    <children>
       <JFXTextField fx:id="nombre" focusColor="#317c53" labelFloat="true" layoutX="94.0" layoutY="38.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="38.0">
          <font>
@@ -111,7 +111,7 @@
       </Label>
       <ImageView fitHeight="115.0" fitWidth="121.0" layoutX="436.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@images/icons8-proveedor-96.png" />
+            <Image url="@images/icons8-añadir-usuario-masculino-96.png" />
          </image>
       </ImageView>
    </children>

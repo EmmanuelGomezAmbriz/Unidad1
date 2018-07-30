@@ -24,18 +24,21 @@ public class PuntoDeVenta extends Application {
     }
 
     @FXML
-    void editarCliente(ActionEvent event) {
-
+    void editarCliente(ActionEvent event) throws IOException {
+        Parent layout = FXMLLoader.load(getClass().getResource("ClientesEditar.fxml"));
+        contenedor.getChildren().add(layout);
     }
 
     @FXML
-    void editarExistencia(ActionEvent event) {
-
+    void editarExistencia(ActionEvent event) throws IOException {
+        Parent layout = FXMLLoader.load(getClass().getResource("ExistenciasEditar.fxml"));
+        contenedor.getChildren().add(layout);
     }
 
     @FXML
-    void editarProducto(ActionEvent event) {
-
+    void editarProducto(ActionEvent event) throws IOException {
+        Parent layout = FXMLLoader.load(getClass().getResource("ProductosEditar.fxml"));
+        contenedor.getChildren().add(layout);
     }
 
     @FXML
@@ -50,23 +53,26 @@ public class PuntoDeVenta extends Application {
     }
 
     @FXML
-    void nuevaExistencia(ActionEvent event) {
+    void nuevaExistencia(ActionEvent event) throws IOException {
+        Parent layout = FXMLLoader.load(getClass().getResource("ExistenciasNuevo.fxml"));
+        contenedor.getChildren().add(layout);
+    }
+
+    @FXML
+    void nuevaVenta(ActionEvent event) throws IOException {
 
     }
 
     @FXML
-    void nuevaVenta(ActionEvent event) {
-
+    void nuevoCliente(ActionEvent event) throws IOException {
+        Parent layout = FXMLLoader.load(getClass().getResource("ClientesNuevo.fxml"));
+        contenedor.getChildren().add(layout);
     }
 
     @FXML
-    void nuevoCliente(ActionEvent event) {
-
-    }
-
-    @FXML
-    void nuevoProducto(ActionEvent event) {
-
+    void nuevoProducto(ActionEvent event) throws IOException {
+        Parent layout = FXMLLoader.load(getClass().getResource("ProductosNuevo.fxml"));
+        contenedor.getChildren().add(layout);
     }
 
     @FXML

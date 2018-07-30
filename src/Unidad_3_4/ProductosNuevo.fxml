@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contenedor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="376.0" prefWidth="600.0" style="-fx-background-color: #d2f4ed;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Unidad_3_4.ProductosNuevo">
+   <children>
+      <JFXTextField fx:id="nombre" focusColor="#317c53" labelFloat="true" layoutX="118.0" layoutY="110.0" prefHeight="26.0" prefWidth="270.0" style="-fx-text-fill: #276860;" unFocusColor="#045680" AnchorPane.leftAnchor="118.0" AnchorPane.topAnchor="110.0">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font></JFXTextField>
+      <JFXButton layoutX="423.0" layoutY="276.0" onAction="#guardar" prefHeight="28.0" prefWidth="141.0" style="-fx-background-color: #2fc648;" text="Guardar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="423.0" layoutY="320.0" onAction="#cancelar" prefHeight="28.0" prefWidth="141.0" style="-fx-background-color: GRAY;" text="Cancelar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="33.0" layoutY="119.0" text="Nombre:" AnchorPane.leftAnchor="33.0" AnchorPane.topAnchor="119.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="170.0" text="Descripción:" AnchorPane.leftAnchor="33.0" AnchorPane.topAnchor="170.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="115.0" fitWidth="121.0" layoutX="436.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/icons8-añadir-usuario-masculino-96.png" />
+         </image>
+      </ImageView>
+      <JFXTextArea fx:id="descripcion" layoutX="33.0" layoutY="206.0" prefHeight="109.0" prefWidth="358.0" />
+      <Label layoutX="33.0" layoutY="22.0" text="ID proveedor:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="idproveeedor" layoutX="33.0" layoutY="60.0" prefHeight="22.0" prefWidth="296.0" promptText="Selecciona aquí el ID del proveedor" />
+   </children>
+</AnchorPane>
