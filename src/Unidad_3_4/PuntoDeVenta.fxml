@@ -49,7 +49,6 @@
             <Menu mnemonicParsing="false" text="Ventas">
               <items>
                 <MenuItem mnemonicParsing="false" onAction="#nuevaVenta" text="Nueva venta" />
-                  <MenuItem mnemonicParsing="false" onAction="#editarVenta" text="Editar venta" />
               </items>
             </Menu>
           <Menu mnemonicParsing="false" text="Ayuda">
