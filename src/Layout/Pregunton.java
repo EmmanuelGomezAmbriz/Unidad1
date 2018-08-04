@@ -20,12 +20,8 @@ public class Pregunton extends Application {
     }
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Label pregunta = new Label("Pregunta 1: En una pecera había 10 " +
-                "peces. 2 se ahogaron, 3 se fueron nadando ¿Cuántos peces quedarón?");
+        Label pregunta = new Label("");
         ComboBox<String> respuestas = new ComboBox<String>();
-        respuestas.getItems().add("7");
-        respuestas.getItems().add("8");
-        respuestas.getItems().add("10");
 
         Label resultado = new Label("Correcto / Incorrecto");
         Button anterior = new Button("Anterior");
@@ -119,8 +115,10 @@ public class Pregunton extends Application {
         indicePreguntaActual = 0;
         preguntas = new ArrayList<Pregunta>();
         preguntas.add(new Pregunta("¿Cuánto es 1 + 1?",new String[]{"1","2","3"},1));
-        preguntas.add(new Pregunta("¿Cuántos planetas hay?",new String[]{"6","8","7"},2));
+        preguntas.add(new Pregunta("¿Cuántos planetas hay?",new String[]{"6","8","7"},1));
         preguntas.add(new Pregunta("¿Quién ganará el mundial?",new String[]{"Francia","Inglaterra","Bélgica"},0));
         preguntas.add(new Pregunta("¿Selecciona la respuesta correcta?",new String[]{"1","2","3"},2));
+        preguntas.add(new Pregunta("Suponiendo que tienes 10 años y tu hermano 5 y ahora tienes 20, ¿Cuántos años tiene tu hermano?",new String[]{"13","10","15"},2));
+        preguntas.add(new Pregunta("7 x (3 + 1) = ",new String[]{"22","25","28"},2));
     }
 }

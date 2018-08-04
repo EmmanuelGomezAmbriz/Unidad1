@@ -38,7 +38,7 @@
       </Label>
       <ImageView fitHeight="115.0" fitWidth="121.0" layoutX="436.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@images/icons8-añadir-usuario-masculino-96.png" />
+            <Image url="@images/icons8-editar-propiedad-96.png" />
          </image>
       </ImageView>
       <JFXTextArea fx:id="descripcion" layoutX="35.0" layoutY="211.0" prefHeight="109.0" prefWidth="358.0" />

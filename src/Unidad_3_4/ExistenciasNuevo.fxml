@@ -37,7 +37,7 @@
       </Label>
       <ImageView fitHeight="115.0" fitWidth="121.0" layoutX="436.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@images/icons8-añadir-usuario-masculino-96.png" />
+            <Image url="@images/icons8-depot-96.png" />
          </image>
       </ImageView>
       <Label layoutX="33.0" layoutY="22.0" text="Producto:">
@@ -51,5 +51,10 @@
             <Font name="Comic Sans MS" size="14.0" />
          </font>
       </JFXTextField>
+      <ImageView fitHeight="62.0" fitWidth="68.0" layoutX="463.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/icons8-us-dollar-96.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

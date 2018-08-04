@@ -38,15 +38,15 @@
       </Label>
       <ImageView fitHeight="115.0" fitWidth="121.0" layoutX="436.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@images/icons8-añadir-usuario-masculino-96.png" />
+            <Image url="@images/icons8-caja-llena-96.png" />
          </image>
       </ImageView>
       <JFXTextArea fx:id="descripcion" layoutX="33.0" layoutY="206.0" prefHeight="109.0" prefWidth="358.0" />
-      <Label layoutX="33.0" layoutY="22.0" text="ID proveedor:">
+      <Label layoutX="33.0" layoutY="22.0" text="Proveedor:">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <JFXComboBox fx:id="idproveeedor" layoutX="33.0" layoutY="60.0" prefHeight="22.0" prefWidth="296.0" promptText="Selecciona aquí el ID del proveedor" />
+      <JFXComboBox fx:id="idproveeedor" layoutX="33.0" layoutY="60.0" prefHeight="22.0" prefWidth="296.0" promptText="Selecciona aquí el proveedor del producto" />
    </children>
 </AnchorPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contenedorP" prefHeight="699.0" prefWidth="836.0" style="-fx-background-color: TRANSPARENT;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProyectoFinal.InterfazPrincipal">
+   <children>
+      <Pane fx:id="interfaz" layoutX="15.0" layoutY="39.0" opacity="0.85" prefHeight="216.0" prefWidth="428.0" style="-fx-background-color: #99c8e5;" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <Label layoutX="33.0" layoutY="22.0" text="Titulo:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="60.0" text="Descripción:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="code" focusColor="#fcfc1b" layoutX="97.0" layoutY="10.0" prefHeight="35.0" prefWidth="303.0" unFocusColor="#0c5cbf">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextArea fx:id="descripcion" focusColor="#fcfc1b" layoutX="128.0" layoutY="58.0" prefHeight="78.0" prefWidth="273.0" unFocusColor="#0c5cbf">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="14.0" />
+               </font>
+            </JFXTextArea>
+            <JFXButton layoutX="34.0" layoutY="167.0" onAction="#nuevoEditar" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #e8ff1e;" text="Nuevo / Editar">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXCheckBox checkedColor="#2cee1e" disable="true" layoutX="344.0" layoutY="176.0" onAction="#hecho" text="Hecho" textFill="#04569a" unCheckedColor="#0c5cbf" />
+         </children>
+      </Pane>
+      <TilePane fx:id="contenedor" layoutX="14.0" layoutY="269.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+      <Pane fx:id="menu" layoutX="15.0" opacity="0.85" prefHeight="35.0" prefWidth="142.0" style="-fx-background-color: #99c8e5;" AnchorPane.leftAnchor="15.0">
+         <children>
+            <ImageView fx:id="limpiar" fitHeight="25.0" fitWidth="28.0" layoutX="42.0" layoutY="5.0" onMouseClicked="#limpiar" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/icons8-empty-trash-32.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="8.0" layoutY="5.0" onMouseClicked="#agregar" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/icons8-plus-24.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="76.0" layoutY="5.0" onMouseClicked="#minimizar" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/icons8-minimize-window-24.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="109.0" layoutY="5.0" onMouseClicked="#cerrar" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/icons8-cancel-24.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

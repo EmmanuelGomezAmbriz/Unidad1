@@ -4,7 +4,7 @@ import javafx.application.Application;
 
 public class Pregunta {
     private String pregunta;
-    private  String[] respuestas;
+    private String[] respuestas;
     private int indiceCorrecto;
 
     public  Pregunta(String pregunta, String[] respuestas, int indiceCorrecto){
