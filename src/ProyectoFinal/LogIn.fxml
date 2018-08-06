@@ -66,5 +66,10 @@
             <Font name="Comic Sans MS" size="36.0" />
          </font>
       </Label>
+      <ImageView fitHeight="28.0" fitWidth="32.0" layoutX="340.0" layoutY="14.0" onMouseClicked="#salir" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/icons8-cancel-24.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

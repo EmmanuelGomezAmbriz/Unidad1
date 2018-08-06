@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.TilePane?>
+
+<AnchorPane prefHeight="631.0" prefWidth="550.0" style="-fx-background-color: TRANSPARENT;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyectoFinalP.misActividades">
+    <children>
+        <AnchorPane layoutX="14.0" layoutY="42.0" prefHeight="175.0" prefWidth="509.0" style="-fx-background-color: #f4d742;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="50.0">
+            <children>
+                <Label layoutX="25.0" layoutY="51.0" prefHeight="17.0" prefWidth="78.0" text="Titulo:" AnchorPane.bottomAnchor="131.0" />
+                <Label layoutX="25.0" layoutY="84.0" prefHeight="17.0" prefWidth="78.0" text="Descripción:" AnchorPane.bottomAnchor="98.0" />
+                <JFXTextField fx:id="titulo" layoutX="115.0" layoutY="46.0" prefHeight="27.0" prefWidth="374.0" AnchorPane.bottomAnchor="126.0" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="20.0" />
+                <JFXTextArea fx:id="descripcion" layoutX="115.0" layoutY="84.0" prefHeight="56.0" prefWidth="374.0" AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="20.0" />
+                <JFXButton fx:id="NuevoEditar" layoutX="202.0" layoutY="153.0" onAction="#NuevoEditar" style="-fx-background-color: #4f71c1;" text="Guardar Nuevo" textFill="WHITE" AnchorPane.bottomAnchor="13.0" />
+                <JFXCheckBox fx:id="hecho" layoutX="401.0" layoutY="157.0" text="Hecho" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="20.0" />
+            </children>
+        </AnchorPane>
+        <TilePane fx:id="listaActividades" layoutX="20.0" layoutY="240.0" prefHeight="371.0" prefWidth="509.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="240.0" />
+        <HBox alignment="CENTER" layoutX="405.0" layoutY="9.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="41.0" prefWidth="86.0" style="-fx-background-color: #f4d742;" AnchorPane.rightAnchor="20.0">
+            <children>
+                <ImageView fitHeight="33.0" fitWidth="39.0" onMouseClicked="#Salir" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/salir.png.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="41.0" fitWidth="42.0" onMouseClicked="#LimpiarHechos" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/limpiar.png.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="41.0" fitWidth="42.0" onMouseClicked="#NuevaNota" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/nuevo.png.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

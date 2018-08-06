@@ -36,12 +36,12 @@
                   <Font name="Comic Sans MS Bold" size="14.0" />
                </font>
             </JFXTextArea>
-            <JFXButton layoutX="34.0" layoutY="167.0" onAction="#nuevoEditar" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #e8ff1e;" text="Nuevo / Editar">
+            <JFXButton fx:id="nuevoEditar" layoutX="34.0" layoutY="167.0" onAction="#nuevoEditar" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #e8ff1e;" text="Nuevo / Editar">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </JFXButton>
-            <JFXCheckBox checkedColor="#2cee1e" disable="true" layoutX="344.0" layoutY="176.0" onAction="#hecho" text="Hecho" textFill="#04569a" unCheckedColor="#0c5cbf" />
+            <JFXCheckBox fx:id="hecho" checkedColor="#2cee1e" layoutX="344.0" layoutY="176.0" onAction="#hecho" text="Hecho" textFill="#04569a" unCheckedColor="#0c5cbf" />
          </children>
       </Pane>
       <TilePane fx:id="contenedor" layoutX="14.0" layoutY="269.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />

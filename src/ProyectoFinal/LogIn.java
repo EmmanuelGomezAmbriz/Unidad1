@@ -4,11 +4,13 @@ import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
@@ -33,6 +35,11 @@ public class LogIn extends Application {
     private JFXPasswordField clave;
 
     @FXML
+    void salir(MouseEvent event) {
+        Platform.exit();
+    }
+
+    @FXML
     void iniciarSesion(ActionEvent event) throws IOException {
         try {
             Connection connection = DriverManager.getConnection("jdbc:sqlite:basedatos1.db");
@@ -49,7 +56,7 @@ public class LogIn extends Application {
                 System.out.println("Usuario válido");
                 System.out.println(rs.getString("nombre"));
 
-                JOptionPane.showMessageDialog(null,"¡Bienvenido "+rs.getString("nombre")+"!");
+                JOptionPane.showMessageDialog(null,"¡Bienvenid@ "+rs.getString("nombre")+"!");
 
                 Parent layout = FXMLLoader.load(getClass().getResource("InterfazPrincipal.fxml"));
                 Scene escena = new Scene(layout);
@@ -72,18 +79,33 @@ public class LogIn extends Application {
     }
 
     @FXML
-    void registrarse(ActionEvent event) {
-
+    void registrarse(ActionEvent event) throws IOException {
+        Parent layout = FXMLLoader.load(getClass().getResource("RegistroP.fxml"));
+        Scene escena = new Scene(layout);
+        escena.setFill(Color.TRANSPARENT);
+        stage.setScene(escena);
     }
 
+    double posX,posY;
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent layout = FXMLLoader.load(getClass().getResource("logIn.fxml"));
         stage = primaryStage;
         Scene escena = new Scene(layout);
         primaryStage.setScene(escena);
-        primaryStage.setTitle("Inicio de Sesiòn");
+        primaryStage.setTitle("Inicio de Sesión");
         primaryStage.initStyle(StageStyle.TRANSPARENT);
         primaryStage.show();
+
+        escena.setOnMousePressed(e -> {
+            posX = e.getSceneX();
+            posY = e.getSceneY();
+
+
+        });
+        escena.setOnMouseDragged(e -> {
+            primaryStage.setX(e.getScreenX()-posX);
+            primaryStage.setY(e.getScreenY()-posY);
+        });
     }
 }
